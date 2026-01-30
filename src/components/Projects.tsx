@@ -103,14 +103,16 @@ export default function Projects() {
 
                                         <div className="pt-2 border-t border-border relative z-50">
                                             {project.githubUrl && (
-                                                <button
-                                                    onClick={() => window.open(project.githubUrl, '_blank', 'noopener,noreferrer')}
+                                                <a
+                                                    href={project.githubUrl}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
                                                     className="flex items-center gap-1.5 text-[10px] font-medium text-primary hover:text-foreground active:scale-95 transition-all duration-300 w-fit py-1 cursor-pointer"
                                                 >
                                                     <Github className="w-3 h-3" />
                                                     Code Source
                                                     <ExternalLink className="w-3 h-3 ml-0.5" />
-                                                </button>
+                                                </a>
                                             )}
                                         </div>
                                     </CardContent>
