@@ -56,7 +56,7 @@ export default function Hero() {
                         transition={{ duration: 0.5, delay: 0.7 }}
                         className="flex flex-wrap gap-4 mb-4"
                     >
-                        <div className="flex gap-2 relative z-20">
+                        <div className="flex gap-2 relative z-50">
                             <ContactButton href="https://github.com/essebaiyayaa" icon={<Github className="w-5 h-5 text-primary" />} label="" />
                             <ContactButton href="https://linkedin.com/in/aya-essebaiy-698a55341" icon={<Linkedin className="w-5 h-5 text-primary" />} label="" />
                             <ContactButton href="mailto:essebaiyaya@gmail.com" icon={<Mail className="w-5 h-5 text-primary" />} label="" />
@@ -73,7 +73,7 @@ export default function Hero() {
                 >
                     <div className="relative w-80 h-80 md:w-[400px] md:h-[400px] lg:w-[480px] lg:h-[480px]">
                         {/* Decorative background element */}
-                        <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse" />
+                        <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse pointer-events-none" />
 
                         {/* Image container */}
                         <div className="relative w-full h-full rounded-full border border-primary/10 overflow-hidden shadow-2xl bg-white">
@@ -115,7 +115,7 @@ function ContactButton({ href, icon, label }: { href: string, icon: React.ReactN
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 bg-secondary border border-border rounded-full hover:border-primary/50 hover:bg-accent transition-all duration-300 group"
+            className="flex items-center gap-2 px-4 py-2 bg-secondary border border-border rounded-full hover:border-primary/50 hover:bg-accent active:scale-95 transition-all duration-300 group cursor-pointer"
         >
             {icon}
             <span className="text-muted-foreground group-hover:text-foreground text-xs font-medium">{label}</span>

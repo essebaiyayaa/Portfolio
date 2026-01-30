@@ -17,7 +17,7 @@ const Footer = () => {
                 </div>
 
                 {/* Center: Social Icons */}
-                <div className="flex items-center gap-3 relative z-20">
+                <div className="flex items-center gap-3 relative z-50">
                     <SocialLink href="https://github.com/essebaiyayaa" icon={<Github size={14} />} />
                     <SocialLink href="https://linkedin.com/in/aya-essebaiy-698a55341" icon={<Linkedin size={14} />} />
                     <SocialLink href="mailto:essebaiyaya@gmail.com" icon={<Mail size={14} />} />
@@ -37,7 +37,7 @@ const SocialLink = ({ href, icon }: { href: string, icon: React.ReactNode }) => 
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="w-8 h-8 flex items-center justify-center rounded-full bg-background border border-border text-muted-foreground hover:text-foreground hover:border-primary/30 transition-all duration-300"
+        className="w-8 h-8 flex items-center justify-center rounded-full bg-background border border-border text-muted-foreground hover:text-foreground hover:border-primary/30 active:scale-95 transition-all duration-300 cursor-pointer"
     >
         {icon}
     </a>
