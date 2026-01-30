@@ -101,13 +101,13 @@ export default function Projects() {
                                             ))}
                                         </div>
 
-                                        <div className="pt-2 border-t border-border">
+                                        <div className="pt-2 border-t border-border relative z-30">
                                             {project.githubUrl && (
                                                 <a
                                                     href={project.githubUrl}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="flex items-center gap-1.5 text-[10px] font-medium text-primary hover:text-foreground transition-colors w-fit"
+                                                    className="flex items-center gap-1.5 text-[10px] font-medium text-primary hover:text-foreground transition-colors w-fit py-1"
                                                 >
                                                     <Github className="w-3 h-3" />
                                                     Code Source

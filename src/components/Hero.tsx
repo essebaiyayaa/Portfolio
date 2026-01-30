@@ -56,9 +56,9 @@ export default function Hero() {
                         transition={{ duration: 0.5, delay: 0.7 }}
                         className="flex flex-wrap gap-4 mb-4"
                     >
-                        <div className="flex gap-2">
+                        <div className="flex gap-2 relative z-20">
                             <ContactButton href="https://github.com/essebaiyayaa" icon={<Github className="w-5 h-5 text-primary" />} label="" />
-                            <ContactButton href="https://linkedin.com/in/essebaiy-aya" icon={<Linkedin className="w-5 h-5 text-primary" />} label="" />
+                            <ContactButton href="https://linkedin.com/in/aya-essebaiy-698a55341" icon={<Linkedin className="w-5 h-5 text-primary" />} label="" />
                             <ContactButton href="mailto:essebaiyaya@gmail.com" icon={<Mail className="w-5 h-5 text-primary" />} label="" />
                         </div>
                     </motion.div>
