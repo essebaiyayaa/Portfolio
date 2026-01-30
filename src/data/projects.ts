@@ -39,8 +39,8 @@ export const projects: Project[] = [
     },
     {
         id: "ecommerce",
-        title: "Application E-commerce",
-        description: "Plateforme E-commerce : gestion des produits, commandes et utilisateurs.",
+        title: "E-commerce Multi-Coopérative",
+        description: "Gestion complète des coopératives, produits, commandes et utilisateurs.",
         image: "ecommerce.jpg",
         category: "web",
         technologies: ["ASP.NET", "Bootstrap", "SQL Server"],
