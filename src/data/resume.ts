@@ -3,7 +3,7 @@ import { Briefcase, GraduationCap, Code, Database, Globe, Wrench } from "lucide-
 
 export const skills = [
     {
-        category: "Langages",
+        category: "Langages de programmation",
         icon: Code,
         items: ["Java", "C", "C#", "PHP", "JavaScript"]
     },
