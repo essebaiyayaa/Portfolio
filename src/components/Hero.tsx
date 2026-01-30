@@ -12,7 +12,7 @@ export default function Hero() {
                     initial={{ opacity: 0, x: -30 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="text-left"
+                    className="text-left relative z-20"
                 >
                     <motion.h2
                         initial={{ opacity: 0 }}
@@ -69,7 +69,7 @@ export default function Hero() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.5 }}
-                    className="flex justify-center md:justify-center md:-translate-x-12"
+                    className="flex justify-center md:justify-center md:-translate-x-12 relative z-10"
                 >
                     <div className="relative w-80 h-80 md:w-[400px] md:h-[400px] lg:w-[480px] lg:h-[480px]">
                         {/* Decorative background element */}
@@ -95,7 +95,7 @@ export default function Hero() {
             <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30">
                 <a
                     href="#projects"
-                    className="flex flex-col items-center gap-2 group transition-all duration-300"
+                    className="flex flex-col items-center gap-2 group transition-all duration-300 pointer-events-auto"
                     onClick={(e) => {
                         e.preventDefault();
                         document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' });
@@ -111,15 +111,14 @@ export default function Hero() {
 
 function ContactButton({ href, icon, label }: { href: string, icon: React.ReactNode, label: string }) {
     return (
-        <motion.a
+        <a
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            whileTap={{ scale: 0.9 }}
-            className="flex items-center gap-2 px-4 py-2 bg-secondary border border-border rounded-full hover:bg-accent transition-colors duration-200 z-50 cursor-pointer"
+            className="flex items-center gap-2 px-4 py-2 bg-secondary border border-border rounded-full hover:bg-accent active:scale-95 transition-all duration-200 z-50 cursor-pointer pointer-events-auto"
         >
-            {icon}
-            {label && <span className="text-muted-foreground text-xs font-medium">{label}</span>}
-        </motion.a>
+            <span className="flex items-center justify-center pointer-events-none">{icon}</span>
+            {label && <span className="text-muted-foreground text-xs font-medium pointer-events-none">{label}</span>}
+        </a>
     );
 }

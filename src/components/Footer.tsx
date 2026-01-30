@@ -1,5 +1,3 @@
-
-import { motion } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
@@ -35,15 +33,14 @@ const Footer = () => {
 
 const SocialLink = ({ href, icon }: { href: string, icon: React.ReactNode }) => {
     return (
-        <motion.a
+        <a
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            whileTap={{ scale: 0.9 }}
-            className="w-8 h-8 flex items-center justify-center rounded-full bg-background border border-border text-muted-foreground hover:text-foreground hover:border-primary/30 transition-all duration-300 cursor-pointer z-50"
+            className="w-8 h-8 flex items-center justify-center rounded-full bg-background border border-border text-muted-foreground hover:text-foreground hover:border-primary/30 active:scale-95 transition-all duration-300 cursor-pointer z-50 pointer-events-auto"
         >
-            {icon}
-        </motion.a>
+            <span className="pointer-events-none">{icon}</span>
+        </a>
     );
 };
 

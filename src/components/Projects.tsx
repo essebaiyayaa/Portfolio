@@ -107,11 +107,13 @@ export default function Projects() {
                                                     href={project.githubUrl}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="flex items-center gap-1.5 text-[10px] font-medium text-primary hover:text-foreground active:scale-95 transition-all duration-300 w-fit py-1 cursor-pointer"
+                                                    className="flex items-center gap-1.5 text-[10px] font-medium text-primary hover:text-foreground active:scale-95 transition-all duration-300 w-fit py-1 cursor-pointer pointer-events-auto"
                                                 >
-                                                    <Github className="w-3 h-3" />
-                                                    Code Source
-                                                    <ExternalLink className="w-3 h-3 ml-0.5" />
+                                                    <span className="pointer-events-none flex items-center gap-1.5">
+                                                        <Github className="w-3 h-3" />
+                                                        Code Source
+                                                        <ExternalLink className="w-3 h-3 ml-0.5" />
+                                                    </span>
                                                 </a>
                                             )}
                                         </div>
