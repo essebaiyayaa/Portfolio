@@ -110,15 +110,25 @@ export default function Hero() {
 }
 
 function ContactButton({ href, icon, label }: { href: string, icon: React.ReactNode, label: string }) {
+    const handleClick = () => {
+        // Force l'ouverture si le lien standard échoue sur certains navigateurs mobiles
+        window.open(href, '_blank', 'noopener,noreferrer');
+    };
+
     return (
-        <a
+        <motion.a
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 bg-secondary border border-border rounded-full hover:border-primary/50 hover:bg-accent active:scale-95 transition-all duration-300 group cursor-pointer"
+            onClick={(e) => {
+                e.preventDefault();
+                handleClick(e);
+            }}
+            whileTap={{ scale: 0.9 }}
+            className="flex items-center gap-2 px-4 py-2 bg-secondary border border-border rounded-full hover:bg-accent transition-colors duration-200 z-50 cursor-pointer"
         >
             {icon}
-            <span className="text-muted-foreground group-hover:text-foreground text-xs font-medium">{label}</span>
-        </a>
+            {label && <span className="text-muted-foreground text-xs font-medium">{label}</span>}
+        </motion.a>
     );
 }

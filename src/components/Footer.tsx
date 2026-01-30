@@ -1,4 +1,5 @@
 
+import { motion } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
@@ -32,15 +33,26 @@ const Footer = () => {
     );
 };
 
-const SocialLink = ({ href, icon }: { href: string, icon: React.ReactNode }) => (
-    <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-8 h-8 flex items-center justify-center rounded-full bg-background border border-border text-muted-foreground hover:text-foreground hover:border-primary/30 active:scale-95 transition-all duration-300 cursor-pointer"
-    >
-        {icon}
-    </a>
-);
+const SocialLink = ({ href, icon }: { href: string, icon: React.ReactNode }) => {
+    const handleClick = () => {
+        window.open(href, '_blank', 'noopener,noreferrer');
+    };
+
+    return (
+        <motion.a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => {
+                e.preventDefault();
+                handleClick();
+            }}
+            whileTap={{ scale: 0.9 }}
+            className="w-8 h-8 flex items-center justify-center rounded-full bg-background border border-border text-muted-foreground hover:text-foreground hover:border-primary/30 transition-all duration-300 cursor-pointer z-50"
+        >
+            {icon}
+        </motion.a>
+    );
+};
 
 export default Footer;
