@@ -115,14 +115,16 @@ export default function Hero() {
             <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30">
                 <a
                     href="#projects"
-                    className="flex flex-col items-center gap-2 group transition-all duration-300 pointer-events-auto"
+                    className="flex flex-col items-center gap-1.5 group transition-all duration-300 pointer-events-auto"
                     onClick={(e) => {
                         e.preventDefault();
                         document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' });
                     }}
                 >
-                    <span className="text-[10px] text-gray-500 uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">Projets</span>
-                    <ArrowDown className="w-5 h-5 text-primary/40 group-hover:text-primary animate-bounce transition-colors" />
+                    <span className="text-[9px] md:text-[10px] text-muted-foreground uppercase tracking-[0.2em] opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-all duration-300">
+                        Projets
+                    </span>
+                    <ArrowDown className="w-5 h-5 text-primary animate-bounce transition-colors" />
                 </a>
             </div>
         </section>
