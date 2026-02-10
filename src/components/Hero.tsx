@@ -4,9 +4,9 @@ import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
 
 export default function Hero() {
     return (
-        <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background pt-20 pb-32 md:py-0">
+        <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background pt-10 md:pt-16 pb-32 md:pb-0">
 
-            <div className="container mx-auto px-6 z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center h-full">
+            <div className="container mx-auto px-6 z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 {/* Text Content - Left Side */}
                 <motion.div
                     initial={{ opacity: 0, x: -30 }}
@@ -71,7 +71,7 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.5 }}
                     className="flex justify-center md:justify-center relative z-10"
                 >
-                    <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-[380px] md:h-[380px] lg:w-[450px] lg:h-[450px]">
+                    <div className="relative w-72 h-72 md:w-[380px] md:h-[380px] lg:w-[450px] lg:h-[450px]">
                         <motion.div
                             animate={{
                                 scale: [1, 1.2, 1],
@@ -112,7 +112,7 @@ export default function Hero() {
             </div>
 
             {/* Functional Scroll indicator */}
-            <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-30">
+            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30">
                 <a
                     href="#projects"
                     className="flex flex-col items-center gap-1.5 group transition-all duration-300 pointer-events-auto"
