@@ -17,7 +17,7 @@ const Navbar = () => {
     const navLinks = [
         { name: "Projets", href: "#projects" },
         { name: "Compétences", href: "#skills" },
-        { name: "Parcours", href: "#contact" }, // "Parcours" remplace Contact selon l'image
+        { name: "Parcours", href: "#experience" }, // "Parcours" remplace Contact selon l'image
     ];
 
     return (
