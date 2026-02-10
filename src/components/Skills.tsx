@@ -19,7 +19,7 @@ export default function Skills() {
                     <p className="text-muted-foreground text-sm">Technologies et outils que je maîtrise.</p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {skills.map((skill, index) => (
                         <motion.div
                             key={skill.category}
@@ -27,17 +27,22 @@ export default function Skills() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="bg-card border border-border rounded-lg p-5 hover:border-primary/30 transition-shadow duration-300 shadow-sm hover:shadow-md"
+                            className="bg-card border border-border rounded-lg p-4 hover:border-primary/30 transition-all duration-300 shadow-sm hover:shadow-md group"
                         >
-                            <h3 className="text-primary font-semibold mb-4 text-sm flex items-center gap-2">
-                                {skill.category}
-                            </h3>
+                            <div className="flex items-center gap-2.5 mb-3">
+                                <div className="p-1.5 bg-secondary rounded-md border border-border group-hover:border-primary/30 transition-colors">
+                                    <skill.icon className="w-4 h-4 text-primary" />
+                                </div>
+                                <h3 className="text-foreground font-bold text-xs uppercase tracking-tight">
+                                    {skill.category}
+                                </h3>
+                            </div>
                             <div className="flex flex-wrap gap-1.5">
                                 {skill.items.map((item) => (
                                     <Badge
                                         key={item}
                                         variant="secondary"
-                                        className="bg-secondary text-muted-foreground hover:bg-primary hover:text-primary-foreground border border-border px-2.5 py-0.5 text-[10px] font-medium"
+                                        className="bg-secondary/50 text-muted-foreground hover:bg-primary hover:text-primary-foreground border border-border px-2 py-0.5 text-[9px] font-medium transition-all duration-300"
                                     >
                                         {item}
                                     </Badge>

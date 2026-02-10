@@ -4,7 +4,7 @@ export interface Project {
     title: string;
     description: string;
     image: string;
-    category: "web" | "desktop" | "devops" | "game";
+    category: "web" | "desktop" | "devops" | "game" | "api";
     technologies: string[];
     githubUrl?: string;
     liveUrl?: string;
@@ -16,6 +16,7 @@ export const categories = [
     { id: "desktop", label: "Desktop" },
     { id: "game", label: "Jeux" },
     { id: "devops", label: "DevOps" },
+    { id: "api", label: "API" },
 ];
 
 export const projects: Project[] = [
@@ -123,7 +124,7 @@ export const projects: Project[] = [
         title: "API de Gestion de Base de Données",
         description: "API Java pour la gestion unifiée d'accès à différents SGBD (MySQL, SQL Server).",
         image: "database-api.jpg",
-        category: "web",
+        category: "api",
         technologies: ["Java", "MySQL", "SQL Server"],
         githubUrl: "https://github.com/essebaiyayaa/DB-API-JAVA",
     },

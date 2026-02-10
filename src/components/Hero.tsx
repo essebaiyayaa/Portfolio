@@ -69,24 +69,44 @@ export default function Hero() {
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 0.5 }}
-                    className="flex justify-center md:justify-center md:-translate-x-12 relative z-10"
+                    className="flex justify-center md:justify-center relative z-10"
                 >
-                    <div className="relative w-80 h-80 md:w-[400px] md:h-[400px] lg:w-[480px] lg:h-[480px]">
-                        {/* Decorative background element */}
-                        <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse pointer-events-none" />
+                    <div className="relative w-72 h-72 md:w-[380px] md:h-[380px] lg:w-[450px] lg:h-[450px]">
+                        <motion.div
+                            animate={{
+                                scale: [1, 1.2, 1],
+                                rotate: [0, 180, 0],
+                            }}
+                            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                            className="absolute inset-0 bg-primary/10 rounded-full blur-3xl pointer-events-none"
+                        />
 
-                        {/* Image container */}
-                        <div className="relative w-full h-full rounded-full border border-primary/10 overflow-hidden shadow-2xl bg-white">
-                            <img
-                                src="/images/profile.jpg"
-                                alt="Aya Essebaiy"
-                                className="w-full h-full object-cover object-center brightness-[1.1] contrast-[1.05]"
-                                onError={(e) => {
-                                    const target = e.target as HTMLImageElement;
-                                    target.src = "https://ui-avatars.com/api/?name=Aya+Essebaiy&background=0D8ABC&color=fff&size=800";
-                                }}
-                            />
-                        </div>
+                        {/* Animated gradient rings */}
+                        <div className="absolute inset-0 rounded-full border-[1.5px] border-primary/20 animate-[spin_10s_linear_infinite]" />
+                        <div className="absolute inset-2 rounded-full border border-dashed border-primary/10 animate-[spin_15s_linear_infinite_reverse]" />
+
+                        {/* Image container with floating effect */}
+                        <motion.div
+                            animate={{ y: [0, -15, 0] }}
+                            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                            className="relative w-full h-full p-4"
+                        >
+                            <div className="w-full h-full rounded-full border-4 border-background p-1 bg-gradient-to-tr from-primary/10 via-background to-primary/5 shadow-2xl relative">
+                                <div className="w-full h-full rounded-full overflow-hidden relative z-10">
+                                    <img
+                                        src="/images/profile.jpg"
+                                        alt="Aya Essebaiy"
+                                        className="w-full h-full object-cover object-center scale-105"
+                                        onError={(e) => {
+                                            const target = e.target as HTMLImageElement;
+                                            target.src = "https://ui-avatars.com/api/?name=Aya+Essebaiy&background=0D8ABC&color=fff&size=800";
+                                        }}
+                                    />
+                                    {/* Glass overlay on image */}
+                                    <div className="absolute inset-0 bg-gradient-to-tr from-primary/5 to-transparent mix-blend-overlay" />
+                                </div>
+                            </div>
+                        </motion.div>
                     </div>
                 </motion.div>
             </div>
