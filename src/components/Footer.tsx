@@ -37,9 +37,9 @@ const SocialLink = ({ href, icon }: { href: string, icon: React.ReactNode }) => 
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-8 h-8 flex items-center justify-center rounded-full bg-background border border-border text-muted-foreground hover:text-foreground hover:border-primary/30 active:scale-95 transition-all duration-300 cursor-pointer z-50 pointer-events-auto"
+            className="w-10 h-10 md:w-8 md:h-8 flex items-center justify-center rounded-full bg-background border border-border text-muted-foreground hover:text-foreground hover:border-primary/30 active:scale-95 transition-all duration-300 cursor-pointer z-50 pointer-events-auto"
         >
-            <span className="pointer-events-none">{icon}</span>
+            <span className="pointer-events-none scale-110 md:scale-100">{icon}</span>
         </a>
     );
 };

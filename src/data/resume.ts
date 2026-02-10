@@ -32,7 +32,7 @@ export interface ExperienceSection {
 
 export const skills: Skill[] = [
     {
-        category: "Langages",
+        category: "Langages de programmation",
         icon: Code,
         items: ["Java", "C", "C#", "PHP", "JavaScript"]
     },

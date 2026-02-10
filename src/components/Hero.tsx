@@ -135,10 +135,10 @@ function ContactButton({ href, icon, label }: { href: string, icon: React.ReactN
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 bg-secondary border border-border rounded-full hover:bg-accent active:scale-95 transition-all duration-200 z-50 cursor-pointer pointer-events-auto"
+            className="flex items-center justify-center w-11 h-11 md:w-auto md:h-auto md:px-4 md:py-2 bg-secondary border border-border rounded-full hover:bg-accent active:scale-90 transition-all duration-200 z-50 cursor-pointer pointer-events-auto"
         >
-            <span className="flex items-center justify-center pointer-events-none">{icon}</span>
-            {label && <span className="text-muted-foreground text-xs font-medium pointer-events-none">{label}</span>}
+            <span className="flex items-center justify-center pointer-events-none scale-110 md:scale-100">{icon}</span>
+            {label && <span className="hidden md:block text-muted-foreground text-xs font-medium pointer-events-none">{label}</span>}
         </a>
     );
 }
