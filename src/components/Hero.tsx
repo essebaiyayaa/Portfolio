@@ -20,7 +20,7 @@ export default function Hero() {
                         transition={{ delay: 0.2 }}
                         className="text-primary font-bold text-2xl md:text-3xl mb-2"
                     >
-                        Bonjour! Je suis
+                        Bonjour, je suis
                     </motion.h2>
 
                     <motion.h1
@@ -38,7 +38,7 @@ export default function Hero() {
                         transition={{ duration: 0.5, delay: 0.4 }}
                         className="text-xl md:text-2xl text-gray-400 mb-6 font-light"
                     >
-                        Élève Ingénieur en Génie Informatique
+                        Élève ingénieur en Génie Informatique – 4ᵉ année, ENSA Tétouan
                     </motion.h3>
 
                     <motion.p
@@ -47,7 +47,7 @@ export default function Hero() {
                         transition={{ duration: 0.5, delay: 0.5 }}
                         className="text-base md:text-lg text-gray-500 mb-8 max-w-xl leading-relaxed"
                     >
-                        Passionnée par l'exploration de nouvelles technologies pour faire progresser ma carrière.
+                        Curieuse et motivée, je recherche un stage PFA pour apprendre, relever des défis et contribuer à des projets techniques.
                     </motion.p>
 
                     <motion.div
