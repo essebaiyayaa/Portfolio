@@ -5,6 +5,7 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import SoftSkills from "@/components/SoftSkills";
 import Experience from "@/components/Experience";
+import Extracurricular from "@/components/Extracurricular";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -16,6 +17,7 @@ const Index = () => {
       <Skills />
       <SoftSkills />
       <Experience />
+      <Extracurricular />
       <Footer />
     </div>
   );
