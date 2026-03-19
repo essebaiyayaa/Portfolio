@@ -23,10 +23,10 @@ export default function Projects() {
                     className="text-center mb-10"
                 >
                     <h2 className="text-2xl md:text-3xl font-bold mb-3 text-foreground">
-                        Mes <span className="text-primary">Projets</span>
+                        My <span className="text-primary">Projects</span>
                     </h2>
                     <p className="text-muted-foreground text-sm">
-                        Découvrez certains de mes derniers projets.
+                        Discover some of my latest projects.
                     </p>
                 </motion.div>
 
@@ -111,7 +111,7 @@ export default function Projects() {
                                                 >
                                                     <span className="pointer-events-none flex items-center gap-1.5">
                                                         <Github className="w-3 h-3" />
-                                                        Code Source
+                                                        Source Code
                                                         <ExternalLink className="w-3 h-3 ml-0.5" />
                                                     </span>
                                                 </a>
