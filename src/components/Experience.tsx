@@ -14,7 +14,7 @@ export default function Experience() {
                     className="text-center mb-10"
                 >
                     <h2 className="text-2xl md:text-3xl font-bold mb-3 text-foreground">
-                        Parcours <span className="text-primary">& Formation</span>
+                        Journey <span className="text-primary">&amp; Education</span>
                     </h2>
                 </motion.div>
 
@@ -78,7 +78,7 @@ export default function Experience() {
                                                             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-secondary text-foreground text-[11px] font-semibold hover:bg-secondary/80 transition-all border border-border shadow-sm active:scale-95"
                                                         >
                                                             <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                                            Site de l'entreprise
+                                                            Company Website
                                                         </a>
                                                     )}
                                                     {item.videoUrl && (
@@ -89,7 +89,7 @@ export default function Experience() {
                                                             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-transparent text-foreground text-[11px] font-semibold hover:bg-secondary/50 transition-all border border-border shadow-sm active:scale-95"
                                                         >
                                                             <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                                                            Vidéo Démo
+                                                            Demo Video
                                                         </a>
                                                     )}
                                                 </div>
