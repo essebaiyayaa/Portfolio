@@ -15,54 +15,54 @@ const activities: Activity[] = [
         id: 1,
         title: "Hackathon 2026",
         organization: "Club InfoTech",
-        role: "Membre du comité d'organisation",
+        role: "Organizing Committee Member",
         date: "2026",
-        description: "Membre de la cellule contact du Hackathon 2026.",
+        description: "Member of the contact team for Hackathon 2026.",
         image: "infotech.jpg"
     },
     {
         id: 101,
-        title: "Conférence IT 2025",
+        title: "IT Conference 2025",
         organization: "Club InfoTech",
-        role: "Membre du comité d'organisation",
+        role: "Organizing Committee Member",
         date: "2025",
-        description: "Organisation de la conférence annuelle et gestion des contacts avec les experts et invités.",
+        description: "Organization of the annual conference and management of contacts with experts and guests.",
         image: "infotech.jpg"
     },
     {
         id: 2,
-        title: "Membre Actif",
+        title: "Active Member",
         organization: "Club InfoTech",
-        role: "Membre Actif",
-        date: "2025 - Présent",
-        description: "Participation active aux workshops et hackathons, contribution aux projets open-source du club Infotech.",
+        role: "Active Member",
+        date: "2025 - Present",
+        description: "Active participation in workshops and hackathons, contribution to the Infotech club's open-source projects.",
         image: "infotech.jpg"
     },
     {
         id: 3,
-        title: "Forum des Entreprises 2025",
+        title: "Career Fair 2025",
         organization: "ENSA Tétouan",
-        role: "Membre du comité d'organisation",
+        role: "Organizing Committee Member",
         date: "2025 - 2026",
-        description: "Organisation du Forum des Entreprises et gestion des contacts avec les entreprises participantes.",
+        description: "Organization of the Career Fair and management of contacts with participating companies.",
         image: "forum.png"
     },
     {
         id: 4,
         title: "AFI",
         organization: "Association Futurs Ingénieurs",
-        role: "Membre Actif",
+        role: "Active Member",
         date: "2023 - 2024",
-        description: "Organisation de l’initiative sociale ‘Nftrou Jmi3’ et participation à des actions humanitaires avec l’Association Futurs Ingénieurs.",
+        description: "Organization of the social initiative 'Nftrou Jmi3' and participation in humanitarian actions with the Futurs Ingénieurs Association.",
         image: "afi.jpg"
     },
     {
         id: 5,
-        title: "4ème édition du projet Farhat Yatim",
+        title: "4th Edition of the Farhat Yatim Project",
         organization: "Club Masjid",
-        role: "Membre du comité d'organisation",
+        role: "Organizing Committee Member",
         date: "2023 - 2024",
-        description: "Organisation du projet social 'Farhat Yatim' et coordination logistique de l'événement.",
+        description: "Organization of the social project 'Farhat Yatim' and logistical coordination of the event.",
         image: "masjid.jpg"
     }
 ];
@@ -78,10 +78,10 @@ export default function Extracurricular() {
                     className="text-center mb-12"
                 >
                     <h2 className="text-2xl md:text-3xl font-bold mb-3 text-foreground">
-                        Activités <span className="text-primary">Parascolaires</span>
+                        Extracurricular <span className="text-primary">Activities</span>
                     </h2>
                     <p className="text-muted-foreground text-sm">
-                        Mon engagement associatif et mes responsabilités.
+                        My community involvement and responsibilities.
                     </p>
                 </motion.div>
 
