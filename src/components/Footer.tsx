@@ -11,7 +11,7 @@ const Footer = () => {
                         Aya <span className="text-primary">Essebaiy</span>
                     </h3>
                     <p className="text-[10px] text-muted-foreground uppercase tracking-wider">
-                        Élève Ingénieur en Génie Informatique
+                        Computer Engineering Student
                     </p>
                 </div>
 
@@ -24,7 +24,7 @@ const Footer = () => {
 
                 {/* Right: Copyright */}
                 <div className="text-[10px] text-muted-foreground">
-                    Fait avec passion &bull; Aya Essebaiy
+                    Made with passion &bull; Aya Essebaiy
                 </div>
             </div>
         </footer>
