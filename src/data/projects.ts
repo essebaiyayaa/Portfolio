@@ -11,10 +11,10 @@ export interface Project {
 }
 
 export const categories = [
-    { id: "all", label: "Tous" },
+    { id: "all", label: "All" },
     { id: "web", label: "Web" },
     { id: "desktop", label: "Desktop" },
-    { id: "game", label: "Jeux" },
+    { id: "game", label: "Games" },
     { id: "devops", label: "DevOps" },
     { id: "api", label: "API" },
 ];
@@ -22,8 +22,8 @@ export const categories = [
 export const projects: Project[] = [
     {
         id: "helpora",
-        title: "Plateforme de Services Helpora",
-        description: "Application web connectant intervenants et clients pour des services de garde d'animaux, babysitting et soutien scolaire.",
+        title: "Helpora Services Platform",
+        description: "Web application connecting service providers and clients for pet sitting, babysitting, and tutoring services.",
         image: "helpora.jpg",
         category: "web",
         technologies: ["Laravel", "Livewire", "Tailwind CSS", "MySQL"],
@@ -31,8 +31,8 @@ export const projects: Project[] = [
     },
     {
         id: "pharmacy-mgmt",
-        title: "Système de Gestion de Pharmacie",
-        description: "Gestion complète des médicaments, stocks, clients et fournisseurs pour pharmacies.",
+        title: "Pharmacy Management System",
+        description: "Complete management of medicines, stock, clients, and suppliers for pharmacies.",
         image: "pharmacy.jpg",
         category: "desktop",
         technologies: ["C#", "Windows Forms", "SQL Server"],
@@ -40,8 +40,8 @@ export const projects: Project[] = [
     },
     {
         id: "ecommerce",
-        title: "E-commerce Multi-Coopérative",
-        description: "Gestion complète des coopératives, produits, commandes et utilisateurs.",
+        title: "Multi-Cooperative E-commerce",
+        description: "Complete management of cooperatives, products, orders, and users.",
         image: "ecommerce.jpg",
         category: "web",
         technologies: ["ASP.NET", "Bootstrap", "SQL Server"],
@@ -49,8 +49,8 @@ export const projects: Project[] = [
     },
     {
         id: "football-reservation",
-        title: "Réservation de Terrains",
-        description: "Gestion des réservations, tournois et créneaux horaires pour terrains de foot.",
+        title: "Pitch Reservation",
+        description: "Management of reservations, tournaments, and time slots for football pitches.",
         image: "football.jpg",
         category: "web",
         technologies: ["PHP", "MySQL", "HTML", "Javascript"],
@@ -58,8 +58,8 @@ export const projects: Project[] = [
     },
     {
         id: "club-events",
-        title: "Gestionnaire d'Événements de Club",
-        description: "Plateforme de gestion d'événements pour clubs d'écoles d'ingénieurs avec inscription des participants et suivi.",
+        title: "Club Events Manager",
+        description: "Event management platform for engineering school clubs with participant registration and tracking.",
         image: "club-events.jpg",
         category: "web",
         technologies: ["PHP", "MySQL", "HTML", "Bootstrap"],
@@ -67,8 +67,8 @@ export const projects: Project[] = [
     },
     {
         id: "scolarite",
-        title: "Service Scolarité",
-        description: "Gestion numérique des demandes de documents académiques et des réclamations.",
+        title: "Student Services",
+        description: "Digital management of academic document requests and complaints.",
         image: "scolarite.jpg",
         category: "web",
         technologies: ["PHP", "MySQL", "HTML", "React", "Tailwind CSS"],
@@ -76,8 +76,8 @@ export const projects: Project[] = [
     },
     {
         id: "petitions",
-        title: "Plateforme de Pétitions",
-        description: "Projet PHP & MySQL permettant aux utilisateurs de créer, signer et gérer des pétitions en ligne avec mise en avant.",
+        title: "Petitions Platform",
+        description: "PHP & MySQL project allowing users to create, sign, and manage online petitions with highlights.",
         image: "petition.jpg",
         category: "web",
         technologies: ["PHP", "MySQL", "HTML", "Bootstrap"],
@@ -85,8 +85,8 @@ export const projects: Project[] = [
     },
     {
         id: "cabinet-listing",
-        title: "Portail d'Annuaire de Cabinets Médicaux",
-        description: "Annuaire web connectant patients et cabinets médicaux avec profils professionnels.",
+        title: "Medical Clinics Directory Portal",
+        description: "Web directory connecting patients and medical clinics with professional profiles.",
         image: "cabinet.jpg",
         category: "web",
         technologies: ["Laravel", "Tailwind CSS", "MySQL", "Javascript"],
@@ -94,8 +94,8 @@ export const projects: Project[] = [
     },
     {
         id: "shooter-game",
-        title: "Jeu de Tir Solo vs Multi",
-        description: "Jeu de tir 2D avec interface graphique Swing offrant des expériences solo et multijoueur en temps réel via sockets.",
+        title: "Solo vs Multi Shooter Game",
+        description: "2D shooter game with Swing GUI offering single-player and real-time multiplayer experiences via sockets.",
         image: "shooter-game.jpg",
         category: "game",
         technologies: ["Java", "Swing", "Sockets", "Threads", "MySQL"],
@@ -103,8 +103,8 @@ export const projects: Project[] = [
     },
     {
         id: "afcon-2025",
-        title: "Portail Officiel de la CAN Maroc 2025",
-        description: "Portail web officiel de la Coupe d'Afrique des Nations 2025 au Maroc avec interface moderne et responsive.",
+        title: "AFCON Morocco 2025 Official Portal",
+        description: "Official web portal for the 2025 Africa Cup of Nations in Morocco with a modern and responsive interface.",
         image: "afcon.jpg",
         category: "web",
         technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
@@ -112,8 +112,8 @@ export const projects: Project[] = [
     },
     {
         id: "docker-dev",
-        title: "Environnement Développement Docker",
-        description: "Environnement de développement standardisé avec Docker pour le full-stack.",
+        title: "Docker Development Environment",
+        description: "Standardized development environment with Docker for full-stack.",
         image: "docker.jpg",
         category: "devops",
         technologies: ["Docker", "Docker Compose", "Apache", "PHP", "MySQL"],
@@ -121,8 +121,8 @@ export const projects: Project[] = [
     },
     {
         id: "db-manager",
-        title: "API de Gestion de Base de Données",
-        description: "API Java pour la gestion unifiée d'accès à différents SGBD (MySQL, SQL Server).",
+        title: "Database Management API",
+        description: "Java API for unified access management to different DBMS (MySQL, SQL Server).",
         image: "database-api.jpg",
         category: "api",
         technologies: ["Java", "MySQL", "SQL Server"],
@@ -130,8 +130,8 @@ export const projects: Project[] = [
     },
     {
         id: "student-mgmt",
-        title: "Système de Gestion des Étudiants",
-        description: "Système de gestion des étudiants avec fonctionnalités CRUD complètes pour la gestion académique.",
+        title: "Student Management System",
+        description: "Student management system with full CRUD functionality for academic management.",
         image: "student-system.jpg",
         category: "desktop",
         technologies: ["C", "Data Structures"],
