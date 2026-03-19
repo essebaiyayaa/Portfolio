@@ -32,7 +32,7 @@ export interface ExperienceSection {
 
 export const skills: Skill[] = [
     {
-        category: "Langages de programmation",
+        category: "Programming Languages",
         icon: Code,
         items: ["Java", "C", "C#", "PHP", "JavaScript"]
     },
@@ -42,22 +42,22 @@ export const skills: Skill[] = [
         items: ["Laravel", "Livewire", "ASP.NET", "Tailwind CSS", "Bootstrap"]
     },
     {
-        category: "Bases de données",
+        category: "Databases",
         icon: Database,
         items: ["MySQL", "SQL Server", "Oracle", "PL/SQL"]
     },
     {
-        category: "Développement Web",
+        category: "Web Development",
         icon: Globe,
         items: ["HTML", "CSS"]
     },
     {
-        category: "Systèmes d'exploitation",
+        category: "Operating Systems",
         icon: Terminal,
         items: ["Linux", "Windows"]
     },
     {
-        category: "Outils & Méthodologies",
+        category: "Tools & Methodologies",
         icon: Wrench,
         items: ["Git/Github", "Agile (Scrum)", "Jira", "Trello"]
     }
@@ -65,33 +65,33 @@ export const skills: Skill[] = [
 
 export const softSkills: SoftSkill[] = [
     {
-        name: "Gestion de projet",
-        description: "Organiser et piloter efficacement les tâches et équipes.",
+        name: "Project Management",
+        description: "Effectively organize and manage tasks and teams.",
         icon: Terminal
     },
     {
-        name: "Travail d’équipe",
-        description: "Collaborer et contribuer à des projets communs avec efficacité.",
+        name: "Teamwork",
+        description: "Collaborate and contribute to common projects efficiently.",
         icon: Users
     },
     {
         name: "Communication",
-        description: "Exprimer clairement idées et solutions à tous les niveaux.",
+        description: "Clearly express ideas and solutions at all levels.",
         icon: MessageSquare
     },
     {
-        name: "Pensée analytique",
-        description: "Résoudre les problèmes avec logique et créativité.",
+        name: "Analytical Thinking",
+        description: "Solve problems with logic and creativity.",
         icon: Brain
     },
     {
-        name: "Autonomie",
-        description: "Prendre des initiatives et travailler de manière indépendante.",
+        name: "Autonomy",
+        description: "Take initiative and work independently.",
         icon: Heart
     },
     {
-        name: "Curiosité",
-        description: "Explorer de nouvelles technologies et apprendre continuellement.",
+        name: "Curiosity",
+        description: "Explore new technologies and learn continuously.",
         icon: Sparkles
     },
 ];
@@ -99,14 +99,14 @@ export const softSkills: SoftSkill[] = [
 export const experience: ExperienceSection[] = [
     {
         type: "experience",
-        title: "Expérience",
+        title: "Experience",
         icon: Briefcase,
         items: [
             {
-                date: "Juillet 2025 - Août 2025",
-                title: "Stagiaire Développement Web Full-Stack",
+                date: "July 2025 - August 2025",
+                title: "Full-Stack Web Development Intern",
                 place: "NajahHost - Tétouan",
-                description: "Conception et développement d’une application web pour connecter patients et cabinets médicaux (espaces patient, propriétaire de cabinet et admin avec gestion des profils, avis et recherche avancée).",
+                description: "Design and development of a web application to connect patients and medical clinics (patient, clinic owner, and admin portals with profile management, reviews, and advanced search).",
                 tags: ["Laravel", "Tailwind CSS", "MySQL"],
                 companyUrl: "https://www.naja7host.com/",
                 videoUrl: "https://www.linkedin.com/posts/aya-essebaiy-698a55341_laravel-laravel12-webdevelopment-activity-7375625298643595264-CXsw?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFXDQpQBjQNnknR4NCVF5odCdyUABFQ_ikM"
@@ -115,20 +115,20 @@ export const experience: ExperienceSection[] = [
     },
     {
         type: "education",
-        title: "Formation",
+        title: "Education",
         icon: GraduationCap,
         items: [
             {
-                date: "2022 - Présent",
-                title: "Diplôme d'Ingénieur d'État en Génie Informatique",
-                place: "ENSA Tétouan, Maroc",
+                date: "2022 - Present",
+                title: "State Engineering Degree in Computer Engineering",
+                place: "ENSA Tétouan, Morocco",
                 description: "",
                 tags: []
             },
             {
                 date: "2022",
-                title: "Baccalauréat Sciences Physiques",
-                place: "Lycée Ibn Khaldoun, Fnideq, Maroc",
+                title: "High School Diploma in Physical Sciences",
+                place: "Ibn Khaldoun High School, Fnideq, Morocco",
                 description: "",
                 tags: []
             }
