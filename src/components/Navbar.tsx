@@ -15,10 +15,10 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: "Projets", href: "#projects" },
-        { name: "Compétences", href: "#skills" },
-        { name: "Parcours", href: "#experience" },
-        { name: "Parascolaire", href: "#extracurricular" },
+        { name: "Projects", href: "#projects" },
+        { name: "Skills", href: "#skills" },
+        { name: "Journey", href: "#experience" },
+        { name: "Extracurricular", href: "#extracurricular" },
     ];
 
     return (
