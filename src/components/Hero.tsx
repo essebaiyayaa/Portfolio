@@ -14,14 +14,15 @@ export default function Hero() {
                     transition={{ duration: 0.8 }}
                     className="text-left relative z-20"
                 >
-                    <motion.h2
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.2 }}
-                        className="text-primary font-bold text-2xl md:text-3xl mb-2"
+                        className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full border border-border/50 bg-secondary/30 text-xs md:text-sm font-medium text-muted-foreground mb-6 shadow-sm"
                     >
-                        Bonjour, je suis
-                    </motion.h2>
+                        <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse shadow-[0_0_8px_rgba(37,99,235,0.8)]"></span>
+                        available for internship · 2026
+                    </motion.div>
 
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
@@ -38,7 +39,7 @@ export default function Hero() {
                         transition={{ duration: 0.5, delay: 0.4 }}
                         className="text-xl md:text-2xl text-gray-400 mb-6 font-light"
                     >
-                        Élève ingénieur en Génie Informatique – 4ᵉ année, ENSA Tétouan
+                        Computer Engineering Student – 4th Year, ENSA Tétouan
                     </motion.h3>
 
                     <motion.p
@@ -47,20 +48,30 @@ export default function Hero() {
                         transition={{ duration: 0.5, delay: 0.5 }}
                         className="text-base md:text-lg text-gray-500 mb-8 max-w-xl leading-relaxed"
                     >
-                        Curieuse et motivée, je recherche un stage PFA pour apprendre, relever des défis et contribuer à des projets techniques.
+                        Curious and motivated, I am seeking a final-year internship to learn, tackle challenges, and contribute to technical projects.
                     </motion.p>
 
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.7 }}
-                        className="flex flex-wrap gap-4 mb-4"
+                        className="flex flex-wrap items-center gap-4 mb-4"
                     >
                         <div className="flex gap-2 relative z-50">
-                            <ContactButton href="https://github.com/essebaiyayaa" icon={<Github className="w-5 h-5 text-primary" />} label="" />
-                            <ContactButton href="https://linkedin.com/in/aya-essebaiy-698a55341" icon={<Linkedin className="w-5 h-5 text-primary" />} label="" />
-                            <ContactButton href="mailto:essebaiyaya@gmail.com" icon={<Mail className="w-5 h-5 text-primary" />} label="" />
+                            <ContactButton href="https://github.com/essebaiyayaa" icon={<Github className="w-5 h-5" />} label="" />
+                            <ContactButton href="https://linkedin.com/in/aya-essebaiy-698a55341" icon={<Linkedin className="w-5 h-5" />} label="" />
+                            <ContactButton href="mailto:essebaiyaya@gmail.com" icon={<Mail className="w-5 h-5" />} label="" />
                         </div>
+                        <a 
+                            href="#projects"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' });
+                            }}
+                            className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg shadow-lg shadow-blue-500/25 transition-all duration-300 active:scale-95 z-50 pointer-events-auto"
+                        >
+                            View Projects
+                        </a>
                     </motion.div>
                 </motion.div>
 
@@ -122,7 +133,7 @@ export default function Hero() {
                     }}
                 >
                     <span className="text-[9px] md:text-[10px] text-muted-foreground uppercase tracking-[0.2em] opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-all duration-300">
-                        Projets
+                        Projects
                     </span>
                     <ArrowDown className="w-5 h-5 text-primary animate-bounce transition-colors" />
                 </a>
