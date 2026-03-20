@@ -4,9 +4,11 @@ import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
 
 export default function Hero() {
     return (
-        <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background pt-10 md:pt-16 pb-32 md:pb-0">
+        <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white pt-10 md:pt-16 pb-32 md:pb-0">
+            {/* Subtle Dot Grid Pattern */}
+            <div className="absolute inset-0 z-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_100%)]"></div>
 
-            <div className="container mx-auto px-6 z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="container mx-auto px-6 z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative">
                 {/* Text Content - Left Side */}
                 <motion.div
                     initial={{ opacity: 0, x: -30 }}
@@ -58,9 +60,9 @@ export default function Hero() {
                         className="flex flex-wrap items-center gap-4 mb-4"
                     >
                         <div className="flex gap-2 relative z-50">
-                            <ContactButton href="https://github.com/essebaiyayaa" icon={<Github className="w-5 h-5" />} label="" />
-                            <ContactButton href="https://linkedin.com/in/aya-essebaiy-698a55341" icon={<Linkedin className="w-5 h-5" />} label="" />
-                            <ContactButton href="mailto:essebaiyaya@gmail.com" icon={<Mail className="w-5 h-5" />} label="" />
+                            <ContactButton href="https://github.com/essebaiyayaa" icon={<Github className="w-5 h-5 text-blue-600" />} label="" />
+                            <ContactButton href="https://linkedin.com/in/aya-essebaiy-698a55341" icon={<Linkedin className="w-5 h-5 text-blue-600" />} label="" />
+                            <ContactButton href="mailto:essebaiyaya@gmail.com" icon={<Mail className="w-5 h-5 text-blue-600" />} label="" />
                         </div>
                         <a 
                             href="#projects"
