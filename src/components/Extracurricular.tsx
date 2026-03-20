@@ -12,6 +12,15 @@ interface Activity {
 
 const activities: Activity[] = [
     {
+        id: 0,
+        title: "Hackathon Water4Future 2026",
+        organization: "Water4Future Montpellier",
+        role: "Semi-finalist & Water Talent Prize",
+        date: "2026",
+        description: "Participation in the Hackathon Water4Future 2026 in Montpellier. Reached the semi-finals and won the Water Talent Prize.",
+        image: "water4future.png"
+    },
+    {
         id: 1,
         title: "Hackathon 2026",
         organization: "Club InfoTech",
@@ -93,7 +102,11 @@ export default function Extracurricular() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="bg-card border border-border rounded-xl p-4 flex flex-col sm:flex-row gap-4 hover:border-primary/20 transition-all duration-300 shadow-sm hover:shadow-md h-full group"
+                            className={`bg-card border border-border rounded-xl p-4 flex flex-col sm:flex-row gap-4 hover:border-primary/20 transition-all duration-300 shadow-sm hover:shadow-md h-full group ${
+                                activities.length % 2 !== 0 && index === activities.length - 1
+                                    ? "md:col-span-2 md:w-[calc(50%-12px)] mx-auto w-full"
+                                    : ""
+                            }`}
                         >
                             {/* Logo Section */}
                             <div className="shrink-0">
