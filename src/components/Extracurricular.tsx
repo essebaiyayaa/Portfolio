@@ -110,11 +110,11 @@ export default function Extracurricular() {
                         >
                             {/* Logo Section */}
                             <div className="shrink-0">
-                                <div className="w-12 h-12 rounded-lg bg-secondary p-1.5 flex items-center justify-center border border-border group-hover:border-primary/20 transition-colors">
+                                <div className="w-14 h-14 md:w-16 md:h-16 rounded-xl bg-white flex items-center justify-center border border-border/60 shadow-sm group-hover:shadow group-hover:border-primary/30 transition-all p-1.5 overflow-hidden">
                                     <img
                                         src={`/images/${activity.image}`}
                                         alt={activity.organization}
-                                        className="w-full h-full object-contain"
+                                        className="w-full h-full object-contain scale-105"
                                         onError={(e) => {
                                             const target = e.target as HTMLImageElement;
                                             target.style.display = 'none';
