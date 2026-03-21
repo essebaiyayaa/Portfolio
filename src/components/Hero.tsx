@@ -4,17 +4,17 @@ import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
 
 export default function Hero() {
     return (
-        <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white pt-10 md:pt-16 pb-32 md:pb-0">
+        <section id="hero" className="min-h-[100dvh] flex items-center justify-center relative overflow-hidden bg-background pt-28 pb-24 md:pt-16 md:pb-0">
             {/* Subtle Dot Grid Pattern */}
             <div className="absolute inset-0 z-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_100%)]"></div>
 
-            <div className="container mx-auto px-6 z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative">
+            <div className="container mx-auto px-6 z-10 flex flex-col-reverse md:grid md:grid-cols-2 gap-12 md:gap-8 items-center relative">
                 {/* Text Content - Left Side */}
                 <motion.div
                     initial={{ opacity: 0, x: -30 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="text-left relative z-20"
+                    className="text-center md:text-left relative z-20 flex flex-col items-center md:items-start"
                 >
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
@@ -57,12 +57,12 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.7 }}
-                        className="flex flex-wrap items-center gap-4 mb-4"
+                        className="flex flex-col sm:flex-row flex-wrap items-center justify-center md:justify-start gap-4 mb-4 w-full"
                     >
-                        <div className="flex gap-2 relative z-50">
-                            <ContactButton href="https://github.com/essebaiyayaa" icon={<Github className="w-5 h-5 text-blue-600" />} label="" />
-                            <ContactButton href="https://linkedin.com/in/aya-essebaiy-698a55341" icon={<Linkedin className="w-5 h-5 text-blue-600" />} label="" />
-                            <ContactButton href="mailto:essebaiyaya@gmail.com" icon={<Mail className="w-5 h-5 text-blue-600" />} label="" />
+                        <div className="flex gap-2.5 relative z-50">
+                            <ContactButton href="https://github.com/essebaiyayaa" icon={<Github className="w-5 h-5" />} label="" />
+                            <ContactButton href="https://linkedin.com/in/aya-essebaiy-698a55341" icon={<Linkedin className="w-5 h-5" />} label="" />
+                            <ContactButton href="mailto:essebaiyaya@gmail.com" icon={<Mail className="w-5 h-5" />} label="" />
                         </div>
                         <a 
                             href="#projects"
@@ -84,7 +84,7 @@ export default function Hero() {
                     transition={{ duration: 0.8, delay: 0.5 }}
                     className="flex justify-center md:justify-center relative z-10"
                 >
-                    <div className="relative w-72 h-72 md:w-[380px] md:h-[380px] lg:w-[450px] lg:h-[450px]">
+                    <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-[380px] md:h-[380px] lg:w-[450px] lg:h-[450px]">
                         <motion.div
                             animate={{
                                 scale: [1, 1.2, 1],
@@ -150,10 +150,12 @@ function ContactButton({ href, icon, label }: { href: string, icon: React.ReactN
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-11 h-11 md:w-auto md:h-auto md:px-4 md:py-2 bg-secondary border border-border rounded-full hover:bg-accent active:scale-90 transition-all duration-200 z-50 cursor-pointer pointer-events-auto"
+            className="flex items-center justify-center w-[54px] h-[40px] bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-full hover:bg-blue-50 hover:border-blue-200 dark:hover:bg-blue-900/30 transition-all duration-300 z-50 cursor-pointer pointer-events-auto group shadow-sm"
+            aria-label={label}
         >
-            <span className="flex items-center justify-center pointer-events-none scale-110 md:scale-100">{icon}</span>
-            {label && <span className="hidden md:block text-muted-foreground text-xs font-medium pointer-events-none">{label}</span>}
+            <span className="flex items-center justify-center pointer-events-none text-blue-600 dark:text-blue-500 group-hover:scale-110 transition-transform duration-300">
+                {icon}
+            </span>
         </a>
     );
 }
