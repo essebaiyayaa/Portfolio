@@ -30,9 +30,9 @@ export default function Hero() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.3 }}
-                        className="text-5xl md:text-7xl font-extrabold mb-4 text-foreground leading-tight"
+                        className="text-5xl sm:text-6xl md:text-[4.5rem] lg:text-[5.5rem] font-signature mb-6 text-foreground leading-tight"
                     >
-                        Aya <span className="text-primary">Essebaiy</span>
+                        Aya <span className="text-blue-600">Essebaiy</span>
                     </motion.h1>
 
                     <motion.h3
