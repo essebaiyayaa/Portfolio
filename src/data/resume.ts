@@ -34,7 +34,7 @@ export const skills: Skill[] = [
     {
         category: "Programming Languages",
         icon: Code,
-        items: ["Java", "C", "C#", "PHP", "JavaScript"]
+        items: ["Java", "C", "C#", "PHP", "JavaScript", "Python"]
     },
     {
         category: "Frameworks & Librairies",
