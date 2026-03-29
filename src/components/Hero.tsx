@@ -50,7 +50,7 @@ export default function Hero() {
                         transition={{ duration: 0.5, delay: 0.5 }}
                         className="text-base md:text-lg text-gray-500 mb-8 max-w-xl leading-relaxed"
                     >
-                        Curious and motivated, I am seeking a final-year internship to learn, tackle challenges, and contribute to technical projects.
+                        Curious and motivated, I am seeking a final-year internship where I can learn, take on challenges, and contribute to technical projects.
                     </motion.p>
 
                     <motion.div
